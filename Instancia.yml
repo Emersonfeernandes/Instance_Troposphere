@@ -1,0 +1,68 @@
+!!python/object:troposphere.Template
+conditions: {}
+description: null
+mappings: {}
+metadata: {}
+outputs: {}
+parameters: {}
+resources:
+  testandonovaImagem: !!python/object:troposphere.ec2.Instance
+    _BaseAWSObject__initialized: true
+    attributes:
+    - Condition
+    - CreationPolicy
+    - DeletionPolicy
+    - DependsOn
+    - Metadata
+    - UpdatePolicy
+    - UpdateReplacePolicy
+    do_validation: true
+    properties: &id001
+      ImageId: ami-01945499792201081
+      InstanceType: t3.micro
+    propnames: !!set
+      Affinity: null
+      AvailabilityZone: null
+      BlockDeviceMappings: null
+      CpuOptions: null
+      CreditSpecification: null
+      DisableApiTermination: null
+      EbsOptimized: null
+      ElasticGpuSpecifications: null
+      ElasticInferenceAccelerators: null
+      EnclaveOptions: null
+      HibernationOptions: null
+      HostId: null
+      HostResourceGroupArn: null
+      IamInstanceProfile: null
+      ImageId: null
+      InstanceInitiatedShutdownBehavior: null
+      InstanceType: null
+      Ipv6AddressCount: null
+      Ipv6Addresses: null
+      KernelId: null
+      KeyName: null
+      LaunchTemplate: null
+      LicenseSpecifications: null
+      Monitoring: null
+      NetworkInterfaces: null
+      PlacementGroupName: null
+      PrivateIpAddress: null
+      RamdiskId: null
+      SecurityGroupIds: null
+      SecurityGroups: null
+      SourceDestCheck: null
+      SsmAssociations: null
+      SubnetId: null
+      Tags: null
+      Tenancy: null
+      UserData: null
+      Volumes: null
+    resource:
+      Properties: *id001
+      Type: AWS::EC2::Instance
+    template: null
+    title: testandonovaImagem
+rules: {}
+transform: null
+version: null
